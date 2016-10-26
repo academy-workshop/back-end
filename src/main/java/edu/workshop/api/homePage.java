@@ -5,15 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class indexPage {
+public class homePage {
 
-  @GetMapping("/")
-  public ModelAndView showResult() {
-    System.out.println("let's get wild");
-    return new ModelAndView("index");
-  }
-  
+    @GetMapping("/home")
+    public ModelAndView showResult() {
+        return new ModelAndView("home");
+    }
 
 }
-
-
